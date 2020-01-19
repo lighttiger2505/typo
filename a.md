@@ -411,7 +411,7 @@ function! s:files() abort
   endif
 
   " Vim scriptでLambdaを使用できます
-  " これは file という引数を受けとり、そのファイルがディレクトリじゃないければ1を返す処理になります
+  " これは file という引数を受けとり、そのファイルがディレクトリでなければ1を返す処理になります
   let Filter = { file -> !isdirectory(session_path . s:sep . file) }
 
   " reddir の第2引数にLambdaの Filter を使用することで
