@@ -414,7 +414,7 @@ function! s:files() abort
   " これは file という引数を受けとり、そのファイルがディレクトリでなければ1を返す処理になります
   let Filter = { file -> !isdirectory(session_path . s:sep . file) }
 
-  " reddir の第2引数にLambdaの Filter を使用することで
+  " readdir の第2引数にLambdaである Filter を使用することで
   " ファイルだけが入ったリストを取得できます
   return readdir(session_path, Filter)
 endfunction
