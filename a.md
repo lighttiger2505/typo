@@ -113,7 +113,7 @@ let dict = {'name': 'gorilla'}
 echo get(dict, 'name', 'cat')
 ```
 
-また、リストは`join({list}, {sep})`を使用することで{list}の要素を{sep}を使って結合し1つの文字列として返します。
+また、リストは`join({list}, {sep})`を使用することで`{list}`の要素を`{sep}`を使って結合し1つの文字列として返します。
 
 ```vim
 let list = ['hello', 'my', 'name', 'is', 'gorilla']
