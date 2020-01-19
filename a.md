@@ -272,7 +272,7 @@ echo system('cat', 'my name is gorilla')
 
 ### Lambda
 { 引数 -> 式 } という形でLambdaを書くことができます。
-次の例は`sort`関数は第2引数にLambdaを受け取ることができて、自前のソート処理を使用できます。
+例えば`sort`関数は第2引数にLambdaを受け取ることができて、Lambdaで書いた自前のソート処理を使用できます。
 
 ```vim
 let F = {a, b -> a - b}
