@@ -434,9 +434,9 @@ function! session#sessions() abort
     return
   endif
 
-  " バッファが存在ている場合
+  " バッファが存在している場合
   if bufexists(s:session_list_buffer)
-    " バッファがウィンドウに表示されているいる場合は
+    " バッファがウィンドウに表示されている場合は
     " `win_gotoid`でウィンドウに移動します
     let winid = bufwinid(s:session_list_buffer)
     if winid isnot# -1
