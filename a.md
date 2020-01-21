@@ -342,7 +342,7 @@ session.vim/
 
 1. ディレクトリ構成通りにファイルとディレクトリを作成
 2. `{packpath}/pack/plugins/start`配下にプラグインディレクトリを配置
-3. `autoload/session.vim`にセッション保存、一覧取得とロードの処理をを実装
+3. `autoload/session.vim`にセッション保存、一覧取得とロードの処理を実装
 4. `plugin/session.vim`にコマンドとオプションを定義
 5. `doc/session.txt`にヘルプを記述
 
