@@ -348,6 +348,29 @@ session.vim/
 
 では、作っていきましょう。
 
+### `session.vim`ディレクトリ構成の作成
+
+開発中のプラグインを動作確認をするために、プラグインをロードする必要があります。
+今回ではVimにビルドインされているパッケージ機能を利用して、開発中のプラグインをロードします。
+開発の準備としてパッケージ機能で使用するディレクトリと、今回開発するプラグインのディレクトリ構成を作成します。
+
+```sh
+# パッケージ機能で使用するディレクトを作成します。ここにプラグインのディレクトリを置くとVim起動時にruntimepathに追加され、プラグインがロードされます
+$ mkdir -p ~/.vim/pack/mypackage/start/
+# Neovimの場合は以下のディレクトリになります。以下手順は適宜読み替えてください
+$ mkdir -p ~/.config/nvim/pack/mypackage/start/
+
+# プラグインのディレクトリ構成を作成します
+$ cd ~/.vim/pack/mypackage/start/
+$ mkdir -p session.vim/autoload
+$ mkdir -p session.vim/doc
+$ mkdir -p session.vim/plugin
+$ cd session.vim
+$ touch -p session.vim/autoload
+$ touch -p session.vim/doc
+$ touch -p session.vim/plugin
+```
+
 ### `autoload/session.vim`の実装
 #### セッション保存処理
 まず`g:session_path`にセッションファイルを作成する関数を実装します。
